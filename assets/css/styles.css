@@ -75,10 +75,9 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: rgb(15, 79, 169);
-  ;
-  --bs-link-hover-color: rgb(15, 79, 169, 0.7);
-  --bs-code-color: rgb(15, 79, 169);
+  --bs-link-color: #a72624;
+  --bs-link-hover-color: #f4623a;
+  --bs-code-color: #a72624;
   --bs-highlight-bg: #fff3cd;
 }
 
@@ -2278,7 +2277,7 @@ progress {
 /*Form*/
 
 .contactForm {
-  padding: 60px 30px;
+  padding: 40px 30px;
   background-color: #fff;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12)
 }
@@ -3258,14 +3257,14 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: rgb(18, 95, 202);
-  --bs-btn-border-color: rgb(18, 95, 202);
+  --bs-btn-bg: #a72624;
+  --bs-btn-border-color: #a72624;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: rgb(18, 95, 202, 0.7);
-  --bs-btn-hover-border-color: rgb(18, 95, 202, 0.7);
+  --bs-btn-hover-bg: #d34a48;
+  --bs-btn-hover-border-color: #f4623a;
   --bs-btn-focus-shadow-rgb: 246, 122, 88;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: rgb(18, 95, 202);
+  --bs-btn-active-bg: #a72624;
   --bs-btn-opacity: 0.7;
   --bs-btn-active-border-color: rgb(18, 95, 202, 0.7);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
@@ -8974,7 +8973,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #a72624 !important;
 }
 
 .bg-secondary {
@@ -12583,10 +12582,10 @@ hr.divider-light {
 }
 
 header.masthead {
-  padding-top: 10rem;
+  padding-top: 7rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgb(255 248 243 / 0%) 0%, rgb(92 77 66 / 66%) 100%), url(../../assets/img/pizza.jpg);
-  background-position: center;
+  background: linear-gradient(to bottom, rgb(255 248 243 / 0%) 0%, rgb(92 77 66 / 66%) 100%), url(../../assets/img/food-scooter.jpg);
+  background-position: right;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -12797,7 +12796,7 @@ Modal
   flex-grow: 1;
   margin: 20px;
   padding: 48px 70px;
-  background: linear-gradient(175deg, rgb(243, 109, 0) 49%, rgb(255, 255, 255) 49.2%);
+  background: linear-gradient(150deg, rgb(167, 38, 36) 49%, rgb(255, 255, 255) 49.2%);
   outline: none;
 }
 
