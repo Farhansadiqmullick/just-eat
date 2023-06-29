@@ -16,7 +16,7 @@
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
-  --bs-red: #dc3545;
+  --bs-red: #e52629;
   --bs-orange: #f4623a;
   --bs-yellow: #ffc107;
   --bs-green: #198754;
@@ -75,9 +75,9 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #a72624;
+  --bs-link-color: #e52629;
   --bs-link-hover-color: #f4623a;
-  --bs-code-color: #a72624;
+  --bs-code-color: #e52629;
   --bs-highlight-bg: #fff3cd;
 }
 
@@ -2298,7 +2298,7 @@ white-space: nowrap;
   flex-grow: 1;
   padding: 30px 70px;
   background-repeat: no-repeat;
-  background: linear-gradient(300deg, rgb(167, 38, 36) 49%, rgb(255, 255, 255) 49.2%);
+  background: linear-gradient(300deg, rgb(229, 38, 41) 49%, rgb(255, 255, 255) 49.2%);
   outline: none;
   overflow: hidden;
 }
@@ -3278,14 +3278,14 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #a72624;
-  --bs-btn-border-color: #a72624;
+  --bs-btn-bg: #e52629;
+  --bs-btn-border-color: #e52629;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #d34a48;
   --bs-btn-hover-border-color: #f4623a;
   --bs-btn-focus-shadow-rgb: 246, 122, 88;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #a72624;
+  --bs-btn-active-bg: #e52629;
   --bs-btn-opacity: 0.7;
   --bs-btn-active-border-color: rgb(18, 95, 202, 0.7);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
@@ -3300,19 +3300,19 @@ textarea.form-control-lg {
 
 .btn-secondary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #6c757d;
-  --bs-btn-border-color: #6c757d;
+  --bs-btn-bg: #3390ffcf;
+  --bs-btn-border-color: #3390ffcf;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #5c636a;
   --bs-btn-hover-border-color: #565e64;
   --bs-btn-focus-shadow-rgb: 130, 138, 145;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #565e64;
-  --bs-btn-active-border-color: #51585e;
+  --bs-btn-active-bg: #3390ffcf;
+  --bs-btn-active-border-color: #3390ffcf;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #6c757d;
-  --bs-btn-disabled-border-color: #6c757d;
+  --bs-btn-disabled-bg: #f4623a;
+  --bs-btn-disabled-border-color: #f4623a;
 }
 
 .btn-success {
@@ -12811,13 +12811,71 @@ Question
 
 
 /*
+Dashboard
+*/
+
+.dashboard-bg-color {
+  flex-grow: 1;
+  padding: 30px 70px;
+  background-repeat: no-repeat;
+  background: rgb(229, 38, 41);
+  outline: none;
+  overflow: auto;
+}
+
+form.dashboard{
+  max-width: 420px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 0.75rem;
+  padding: 20px 40px;
+  height: auto;
+  overflow: hidden;
+}
+
+.dashboard .next::after{
+  position: absolute;
+  content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iI2ZmZmZmZiIgY2xhc3M9ImJpIGJpLWFycm93LXJpZ2h0IiB2aWV3Qm94PSIwIDAgMTYgMTYiPgogIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTEgOGEuNS41IDAgMCAxIC41LS41aDExLjc5M2wtMy4xNDctMy4xNDZhLjUuNSAwIDAgMSAuNzA4LS43MDhsNCA0YS41LjUgMCAwIDEgMCAuNzA4bC00IDRhLjUuNSAwIDAgMS0uNzA4LS43MDhMMTMuMjkzIDguNUgxLjVBLjUuNSAwIDAgMSAxIDh6Ii8+Cjwvc3ZnPg==");
+  margin-left: 5px;
+  margin-top: 2px;
+}
+
+.dashboard .prev::before{
+  position: absolute;
+  content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iI2ZmZmZmZiIgY2xhc3M9ImJpIGJpLWFycm93LWxlZnQiIHZpZXdCb3g9IjAgMCAxNiAxNiI+CiAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTUgOGEuNS41IDAgMCAwLS41LS41SDIuNzA3bDMuMTQ3LTMuMTQ2YS41LjUgMCAxIDAtLjcwOC0uNzA4bC00IDRhLjUuNSAwIDAgMCAwIC43MDhsNCA0YS41LjUgMCAwIDAgLjcwOC0uNzA4TDIuNzA3IDguNUgxNC41QS41LjUgMCAwIDAgMTUgOHoiLz4KPC9zdmc+");
+  margin-left: -20px;
+  margin-top: 2px;
+}
+
+.dashboard .btn-secondary:hover{
+ transition: 0.3s all ease-out;
+}
+
+.dashboard .step{
+  display: none;
+}
+.dashboard .step.active {
+  display: block;
+}
+
+.tab.active{
+  background-color: rgb(229, 38, 41);
+  border-radius: 0.75rem;
+}
+
+.tab.active a{
+  color: #fff;
+}
+
+
+/*
 Modal
 */
 .landing-modal {
   flex-grow: 1;
   margin: 20px;
   padding: 48px 70px;
-  background: linear-gradient(150deg, rgb(167, 38, 36) 49%, rgb(255, 255, 255) 49.2%);
+  background: linear-gradient(150deg, rgb(229, 38, 41) 49%, rgb(255, 255, 255) 49.2%);
   outline: none;
   border: none;
 }
