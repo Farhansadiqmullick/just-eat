@@ -4,7 +4,7 @@
  * Bootstrap Navwalker
  */
 
-if (is_front_page() && !is_page_template('login') && !is_page_template('dashboad')) {
+if (!is_page_template('login') && !is_page_template('dashboad')) {
 
     require_once get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
 }
